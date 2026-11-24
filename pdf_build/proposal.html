@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>A12 Baizhuman Madi: CS-Audit</title>
+<style>
+@page { size: A4; margin: 17mm 17mm 16mm 17mm; }
+body { font-family: "Times New Roman", Times, serif; font-size: 10.6pt; line-height: 1.32; color: #111; margin: 0; }
+h1 { font-size: 17pt; text-align: center; margin: 0 0 2pt; }
+.sub { text-align: center; font-size: 11pt; font-style: italic; margin-bottom: 6pt; }
+.meta { text-align: center; font-size: 9.6pt; margin-bottom: 2pt; }
+h2 { font-size: 12pt; margin: 9pt 0 3pt; }
+h3 { font-size: 10.8pt; margin: 6pt 0 2pt; }
+p { margin: 0 0 4pt; text-align: justify; }
+ul { margin: 2pt 0 4pt 0; padding-left: 16pt; } li { margin-bottom: 2pt; text-align: justify; }
+table { border-collapse: collapse; width: 100%; font-size: 9.4pt; margin: 4pt 0 2pt; }
+th, td { border-top: 1px solid #999; border-bottom: 1px solid #999; padding: 2.5pt 4pt; text-align: left; vertical-align: top; }
+th { background: #eef1f4; }
+.cap { font-size: 9.2pt; text-align: center; margin: 2pt 0 6pt; }
+img { display: block; margin: 4pt auto 0; }
+.mono { font-family: Menlo, Consolas, monospace; font-size: 8.3pt; white-space: pre; background: #f4f5f7; padding: 6pt; border: 1px solid #ddd; line-height: 1.3; }
+.refs p { font-size: 9pt; padding-left: 18pt; text-indent: -18pt; margin-bottom: 2pt; text-align: left; }
+.avoid { break-inside: avoid; }
+.num { text-align: right; }
+b.kw { font-weight: bold; }
+</style></head><body>
+
+<h1>CS-Audit</h1>
+<div class="sub">An Open Toolkit and Benchmark for Error-Level Evaluation of Speech Recognition on Kazakh and Kazakh–Russian Code-Switched Speech</div>
+<div class="meta">Madi Baizhuman &nbsp;|&nbsp; Student ID 230103047 &nbsp;|&nbsp; 230103047@sdu.edu.kz</div>
+<div class="meta">SDU University, School of Information Technologies and Applied Mathematics</div>
+<div class="meta">CSS 410 Research Tools and Methods — Assignment 12 (Mini-R&amp;D Project Prototype)</div>
+<div class="meta"><b>Video presentation (3–4 min):</b> <a href="https://youtu.be/XTlcQYuW5Ek">https://youtu.be/XTlcQYuW5Ek</a></div>
+
+<h2>1 Title, Acronym and Abstract</h2>
+<p><b>Title:</b> CS-Audit: An Open Toolkit and Benchmark for Error-Level Evaluation of Speech Recognition on Kazakh and Kazakh–Russian Code-Switched Speech. <b>Acronym:</b> CS-Audit.</p>
+<p><b>Abstract.</b> Open Kazakh speech corpora and multilingual models such as Whisper now exist, but accuracy is reported as one word error rate (WER) per test set, mostly on read or broadcast speech, while everyday Kazakh is spontaneous and mixes Russian words into Kazakh sentences. Developers therefore cannot tell how much accuracy is lost on such speech or why. CS-Audit will deliver (i) an open pipeline that finds code-switched utterances in reference transcripts and classifies every recognition error into six classes (substitution, deletion, insertion, wrong language or script, loanword or number error, hallucination), (ii) test sets of read, spontaneous and code-switched Kazakh built from open corpora, and (iii) a study of how much fine-tuning on 10, 50 and 100 hours of open data repairs each error class. A first prototype, tested on simulated recognition output with known errors (20 seeds), detects code-switched utterances with F1 = 0.89 (letter-rule baseline 0.72) and classifies errors with macro-F1 = 0.84 (baseline 0.36). A first check on real ASR output (a commercial API, Soniox, on 20 phrases recorded by the author) ran end to end and labelled all five real errors in line with manual inspection. This supports technical feasibility at TRL 3. The 18-month project aims at TRL 5 with real recognition output on real corpora, and releases all code and data under open licences.</p>
+
+<h2>2 Relevance, Problem Statement and Type of R&amp;D</h2>
+<p>Automatic speech recognition (ASR) underlies voice assistants, subtitling and call analytics. Whisper was trained on 680,000 hours of audio [9], but Kazakh is under-represented: Whisper-large reaches 43.58% WER on the FLEURS Kazakh test set [3]. Kazakh data have grown (KSC with 332 h [2], KSC2 with more than 1,000 h including code-switched utterances [7]), yet the problem remains: a company that builds a Kazakh voice product does not know how its model behaves on spontaneous speech with Russian words, which errors dominate, and how much extra data is worth collecting. This matters for the use of the state language in digital services.</p>
+<p><b>Type of R&amp;D.</b> The project is <i>applied research</i> (new methods and a benchmark with a practical aim) with a component of <i>experimental development</i> (a working toolkit). Frascati criteria [8]: <i>novel</i>: no error-level, speech-type comparison for Kazakh–Russian speech was found in the literature reviewed; <i>creative</i>: a new combination of automatic code-switch detection and a six-class error scheme tailored to Kazakh; <i>uncertain</i>: it is not known whether code-switching can be detected and errors classified automatically with sufficient reliability, nor how fine-tuning gains behave between 10 and 100 h; <i>systematic</i>: planned work packages, preregistered metrics and statistics; <i>transferable/reproducible</i>: open code, data lists and annotation guide, reusable for other Turkic languages.</p>
+
+<h2>3 State of the Art, Gap and TRL</h2>
+<p><b>Multilingual models.</b> Whisper is open and multilingual, but quality follows the amount of data per language [9]. For Kazakh, fine-tuning and decoding matter: a small Whisper model had WER above 100% before fine-tuning, and pseudo-labels with a language model reduced Whisper-large to 32.36% on FLEURS [3]. A community Whisper Large V3 fine-tuned on KSC2 reports about 17.7% WER on its own split and no code-switching evaluation [11]. Commercial APIs (e.g. Soniox [13]) support Kazakh and Russian in one stream, but publish no error-level results for mixed speech. <b>Resources.</b> KSC reached 8.7% WER with a trained baseline [2]; KSC2 extends the data to broadcast, parliament and podcast speech with code-switching [7]; a multilingual Kazakh–Russian–English model has been studied [6]. <b>Code-switching.</b> It is a known difficulty because models are trained per language and mixed data are scarce [10]; for Hindi–English and Bengali–English the MUCS baselines reached about 32% WER on code-switched test data [1]. <b>Metrics.</b> WER hides the type of error [5].</p>
+<p><b>Gap.</b> (1) The same models are not compared on read, spontaneous and code-switched Kazakh under one protocol. (2) Error types are not analysed. (3) The effect of small fine-tuning sets is not measured per speech type. (4) No open tool exists to find code-switched Kazakh utterances and classify errors automatically.</p>
+<p><b>TRL</b> [4]. <i>Current:</i> TRL 3 (analytical and experimental proof of concept; reached by the prototype in Sec. 6, with a first end-to-end run on real ASR output). <i>Target at project end:</i> TRL 5 (components validated in a relevant environment: real recognition output from several models on real corpora).</p>
+
+<h2>4 Aim and SMART Objectives</h2>
+<p><b>Aim:</b> to make the accuracy of Kazakh ASR measurable <i>by speech type and error type</i>, and to quantify what small-corpus fine-tuning achieves.</p>
+<ul>
+<li><b>O1 (by month 8):</b> build test sets of ≥ 2 h each for read, spontaneous and code-switched Kazakh and a CS-Audit v1 whose code-switch detector reaches F1 ≥ 0.85 on 600 manually verified real utterances.</li>
+<li><b>O2 (by month 12):</b> evaluate Whisper small, medium, large-v3, one Kazakh-specific model and one commercial API on the three speech types, reporting WER and CER with 95% confidence intervals and an error-class breakdown (500 manually checked errors per speech type, Cohen's κ ≥ 0.70).</li>
+<li><b>O3 (by month 17):</b> measure fine-tuning gains with 10, 50 and 100 h (3 seeds, 18 runs) per speech type and test whether the gain from 50 to 100 h is less than half the gain from 0 to 50 h.</li>
+<li><b>O4 (by month 18):</b> publish the benchmark, toolkit and annotation guide under open licences, submit one conference paper, and hold one workshop with at least two Kazakhstani voice-technology companies.</li>
+</ul>
+
+<h2>5 Methodology</h2>
+<h3>5.1 Study Design</h3>
+<p>Quantitative, experimental and comparative: independent variables are speech type, model and fine-tuning hours; dependent variables are WER, CER and error-class shares. Data: Common Voice, FLEURS, KSC and KSC2 [2, 7]. Utterances are assigned to speech types from corpus metadata and the code-switch detector, then verified by listening. Fine-tuning subsets are nested and speaker-disjoint from test sets; hyper-parameters are chosen once on a development set; text normalisation (lower case, ё→е, punctuation and fillers removed) is identical for all systems.</p>
+<h3>5.2 Error Scheme and Analysis</h3>
+<p>Errors are aligned with the reference and assigned to E1 substitution, E2 deletion, E3 insertion, E4 wrong language or script, E5 loanword or number error, E6 hallucination (repeated or invented text). WER uses bootstrap intervals; speech types are compared with a paired bootstrap, error-class shares with a chi-square test (Holm correction), learning curves with seed means and spread.</p>
+<h3>5.3 Prototype and Success Criteria</h3>
+<p><b>Key technical uncertainty:</b> can the audit pipeline find code-switched utterances and classify errors reliably from text alone, before any GPU is spent? The prototype (Python, <code>csaudit.py</code>) contains: (a) a <i>code-switch detector</i>, a character 1–4-gram naive Bayes language identifier for words (Kazakh vs Russian); (b) a word-level Levenshtein <i>aligner</i> and rule-based <i>classifier</i> for E1–E6; (c) a <i>simulator</i> that builds utterances from 42 Kazakh and 30 code-switched hand-written sentences (one or two sentences per utterance) and injects errors of known type, giving ground truth. Established loanwords (<i>телефон, компьютер</i>) are labelled Kazakh, so the detector must not flag them. The detector is trained on 60% of the sentences plus a list of 146 common Russian words and tested on utterances built from the held-out 40%. Baselines: a letter rule for detection (a word is Russian if it has no Kazakh-specific letter and contains a letter such as в, ф, ц, ч, щ, э, ю, я), and the standard substitution/deletion/insertion breakdown for classification. <b>Success criteria (set before the run):</b> detector utterance-level F1 ≥ 0.85; classifier macro-F1 ≥ 0.80 and at least 0.15 above the baseline. Each experiment was repeated for 20 random seeds (600 test utterances each); we report the mean and 95% t-interval.</p>
+<p><b>Real-output check.</b> The author recorded 20 short phrases (10 Kazakh, 10 Kazakh–Russian; phone microphone, read speech, one speaker). They were transcribed by the Soniox asynchronous API (model <code>stt-async-v3</code>, language hints kk, ru) [13]; the read text is the reference. This tests that the pipeline runs on real recognition output; it is not a model evaluation.</p>
+
+<h2>6 Prototype Results (TRL 3)</h2>
+<h3>6.1 Simulated Errors (20 Seeds)</h3>
+<p>Table 1 and Fig. 1 show the results; the simulated recognition errors have a mean WER of 22.7% on Kazakh and 23.5% on code-switched utterances (set by the simulator, not a finding about real systems).</p>
+<div class="avoid">
+<table>
+<tr><th>Detector (utterance level)</th><th class="num">Precision</th><th class="num">Recall</th><th class="num">F1</th></tr>
+<tr><td>Letter rule (baseline)</td><td class="num">0.834 ± 0.043</td><td class="num">0.642 ± 0.044</td><td class="num">0.721 ± 0.035</td></tr>
+<tr><td>Character n-gram NB (CS-Audit)</td><td class="num">0.823 ± 0.031</td><td class="num">0.979 ± 0.018</td><td class="num"><b>0.892 ± 0.019</b></td></tr>
+<tr><td>Word level: rule / NB F1</td><td colspan="3" class="num">0.643 ± 0.033 / 0.820 ± 0.027</td></tr>
+</table>
+<div class="cap">Table 1: Code-switch detection on held-out utterances (mean ± 95% CI over 20 seeds).</div>
+<img src="../fig_results.png" style="width: 100%;">
+<div class="cap">Figure 1: Left: detector F1, baseline vs CS-Audit. Right: per-class error-classification F1; the standard S/D/I breakdown cannot produce E4–E6.</div>
+</div>
+<p><b>Classifier.</b> Macro-F1 is 0.837 ± 0.005 for CS-Audit and 0.358 ± 0.004 for the baseline (difference 0.48). Per-class F1: E1 0.891, E2 0.828, E3 0.894, E4 0.742, E5 0.946, E6 0.722. <b>All three success criteria were met.</b> The weakest classes are E4 (recall 0.66: a Kazakh word written in Russian spelling is often still identified as Kazakh, so the share of E4 is underestimated, 8.4% estimated vs 10.6% true) and E6 (recall 0.69: a hallucinated repetition is sometimes aligned as a substitution).</p>
+
+<h3>6.2 First Check on Real ASR Output</h3>
+<div class="avoid">
+<table>
+<tr><th>Phrases</th><th class="num">Words</th><th class="num">WER</th><th>Errors found by CS-Audit</th></tr>
+<tr><td>Kazakh (10)</td><td class="num">44</td><td class="num">4.5%</td><td>2 × E5: <i>тоғызда → 9-да</i>, <i>екі → 2</i></td></tr>
+<tr><td>Code-switched (10)</td><td class="num">45</td><td class="num">6.7%</td><td>3 × E1: <i>собеседованиеге → собеседованиеға</i>, <i>характері → характеры</i>, <i>нормально → нормальный</i></td></tr>
+</table>
+<div class="cap">Table 2: Soniox <code>stt-async-v3</code> on 20 phrases recorded by the author; errors labelled by CS-Audit.</div>
+</div>
+<p>The pipeline ran end to end on real output. All five errors were labelled in line with manual inspection, and the detector marked all 10 code-switched and none of the 10 Kazakh references (letter rule: 8 of 10). The errors are of a type the simulator under-represents: the ASR wrote numbers as digits (a normalisation issue, not a recognition failure), and on Russian stems it chose the wrong Kazakh suffix or the Russian ending (<i>-ға</i> for <i>-ге</i>, <i>-ы</i> for <i>-і</i>). Such errors are labelled E1, which suggests a dedicated sub-class for suffix errors on Russian stems. With 20 phrases and 5 errors these figures are illustrative only and carry no statistical weight; some Russian words (<i>вообще, короче</i>) also occur in the detector's training sentences.</p>
+<p><b>TRL claim.</b> TRL 3 is supported: the pipeline works end to end in a simulated environment, with results against baselines and success criteria fixed in advance, and it runs on real ASR output.</p>
+<p><b>Limitations.</b> (i) The main experiment uses simulated ASR output, so its numbers show that the tool recovers known error types, not how Whisper or other models behave; (ii) the sentences are few, hand-written and simple, and the simulator injects errors independently, so real error patterns will be harder; (iii) the real check has one speaker, read speech and only five errors; (iv) the Russian word list used for training is small; (v) the classification baseline is deliberately simple and cannot produce E4–E6, so the macro-F1 gap shows the added value of the scheme rather than superiority over a trained system. <b>Next steps to TRL 4–5:</b> run the pipeline on real Whisper and API output for KSC2 and Common Voice, measure detector quality on 600 manually verified real utterances, and tune the E4, E6 and suffix rules on real errors.</p>
+
+<h2>7 Work Plan</h2>
+<p>Five work packages over 18 months (Fig. 2). <b>WP1</b> management, data and licences (M1–18); <b>WP2</b> test sets and CS-Audit v1 (M1–8; D2.1 test sets, D2.2 tool; milestone M1, month 8: O1 met); <b>WP3</b> zero-shot evaluation and error analysis (M6–12; D3.1 report; M2, month 12: O2 met); <b>WP4</b> fine-tuning study (M10–17; D4.1 models and learning curves; M3, month 17: O3 met); <b>WP5</b> dissemination and technology transfer (M14–18; D5.1 paper, D5.2 workshop and guide; M4, month 18: O4 met).</p>
+<div class="avoid">
+<img src="../fig_gantt.png" style="width: 88%;">
+<div class="cap">Figure 2: Gantt chart (18 months); dotted lines are milestones M1–M4.</div>
+</div>
+
+<h2>8 Expected Results, Impact and Transfer</h2>
+<p><b>Scientific:</b> the first comparison of the same models on three Kazakh speech types with an error-level analysis; a reusable scheme and test sets for Turkic languages that mix with Russian. <b>Economic:</b> companies building voice products can decide between a bigger model, more data and better text normalisation using learning curves in hours of audio, which translate into cost. <b>Societal:</b> better recognition of everyday Kazakh supports the state language in digital services and captioning for people with hearing impairment. <b>Dissemination:</b> open repository, a conference paper (for example Interspeech or SPECOM), a workshop and a guide for practitioners. <b>Transfer route:</b> release under Apache-2.0 (code) and CC BY (annotations), pilot with two local voice-technology companies, and a follow-on application for an applied-research call.</p>
+
+<h2>9 Team and Budget (hypothetical)</h2>
+<p><b>Team:</b> principal investigator (0.2 FTE, speech/ML, scientific lead); research engineer (1.0 FTE, pipeline, training, evaluation); student researcher (0.5 FTE, annotation guide, analysis); two external annotators (subcontracted, Kazakh–Russian bilinguals).</p>
+<div class="avoid">
+<table>
+<tr><th>Category</th><th class="num">Amount</th><th>Justification</th></tr>
+<tr><td>Personnel</td><td class="num">42,000</td><td>PI 9,000; engineer 27,000; student 6,000</td></tr>
+<tr><td>Equipment / computing</td><td class="num">3,000</td><td>about 150 GPU-hours for 18 fine-tuning runs and evaluation, commercial API transcription of test sets, plus a margin</td></tr>
+<tr><td>Consumables</td><td class="num">500</td><td>storage and hosting of data and models</td></tr>
+<tr><td>Travel</td><td class="num">2,500</td><td>one international conference</td></tr>
+<tr><td>Subcontracting</td><td class="num">2,000</td><td>annotators, about 2 × 120 h, plus checking</td></tr>
+<tr><td>Overheads (20% of direct)</td><td class="num">10,000</td><td>institutional costs</td></tr>
+<tr><th>Total</th><th class="num">60,000</th><th></th></tr>
+</table>
+<div class="cap">Table 3: Budget for 18 months (USD, hypothetical).</div>
+</div>
+
+<h2>10 Risks, Ethics, Data Management and IP</h2>
+<div class="avoid">
+<table>
+<tr><th>#</th><th>Risk</th><th>L</th><th>I</th><th>Mitigation</th></tr>
+<tr><td>R1</td><td>Real errors are harder to classify than simulated ones (classifier F1 drops)</td><td>M</td><td>H</td><td>Tune on real samples; keep manual check; report agreement</td></tr>
+<tr><td>R2</td><td>Too few code-switched utterances in open data</td><td>M</td><td>M</td><td>Use KSC2 podcasts; add consented recordings if needed</td></tr>
+<tr><td>R3</td><td>Corpus licence restricts redistribution of audio</td><td>L</td><td>M</td><td>Release only utterance IDs, labels and scripts</td></tr>
+<tr><td>R4</td><td>GPU time or budget is insufficient for 18 runs</td><td>M</td><td>M</td><td>Use LoRA, smaller models, fewer seeds with reported spread</td></tr>
+<tr><td>R5</td><td>Low annotator agreement (κ &lt; 0.70)</td><td>M</td><td>M</td><td>Revise guide, re-train annotators, adjudicate</td></tr>
+<tr><td>R6</td><td>Staff turnover or delay</td><td>L</td><td>M</td><td>Documented code, two-person review, buffer in WP5</td></tr>
+</table>
+<div class="cap">Table 4: Risk register (L = likelihood, I = impact; H/M/L).</div>
+</div>
+<p><b>Ethics.</b> Only public corpora under their licences are used; no personal data are collected, speakers are not identified, and any recordings added later require informed consent and data-protection review. The prototype recordings are the author's own voice; file metadata (including location) were removed before upload, and the audio was deleted from the API after transcription. <b>FAIR data</b> [12]. <i>Findable:</i> repository with DOI and metadata; <i>Accessible:</i> open download (utterance IDs, annotations, models where licences allow); <i>Interoperable:</i> standard formats (CSV/JSON, HuggingFace datasets); <i>Reusable:</i> licences, README, annotation guide, version tags and seeds. <b>IP.</b> Code Apache-2.0, annotations CC BY 4.0; third-party corpora keep their own licences; no patent is planned.</p>
+
+<h2>AI-Use Statement</h2>
+<p><b>Tool:</b> Anthropic Claude (an AI assistant). <b>Purpose:</b> drafting the text of this proposal and the slides, designing the prototype experiment, writing and running the prototype code (<code>csaudit.py</code>, <code>soniox_eval.py</code>, <code>demo.py</code>) and producing the figures. <b>Extent:</b> substantial; the student chose the topic, directed the work, recorded the 20 test phrases, and is responsible for checking that the content, citations and results are accurate. The reported results come from running the included code on simulated data and on the student's recordings; no result was invented. The video is presented by the student.</p>
+
+<h2>References</h2>
+<div class="refs">
+<p>[1] A. Diwan <i>et al.</i>, “Multilingual and code-switching ASR challenges for low resource Indian languages,” in <i>Proc. Interspeech</i>, 2021, pp. 2446–2450.</p>
+<p>[2] Y. Khassanov <i>et al.</i>, “A crowdsourced open-source Kazakh speech corpus and initial speech recognition baseline,” in <i>Proc. EACL</i>, 2021, pp. 697–706.</p>
+<p>[3] J. Li, Y. Pu, Q. Sun, and W.-Q. Zhang, “Improving Whisper's recognition performance for under-represented language Kazakh leveraging unpaired speech and text,” in <i>Proc. Interspeech</i>, 2024, doi: 10.21437/Interspeech.2024-1790.</p>
+<p>[4] J. C. Mankins, “Technology readiness levels: A white paper,” NASA, Office of Space Access and Technology, 1995.</p>
+<p>[5] A. C. Morris, V. Maier, and P. Green, “From WER and RIL to MER and WIL,” in <i>Proc. Interspeech</i>, 2004, pp. 2765–2768.</p>
+<p>[6] S. Mussakhojayeva, Y. Khassanov, and H. A. Varol, “A study of multilingual end-to-end speech recognition for Kazakh, Russian, and English,” in <i>SPECOM</i>, LNCS 12997, 2021, pp. 448–459.</p>
+<p>[7] S. Mussakhojayeva, Y. Khassanov, and H. A. Varol, “KSC2: An industrial-scale open-source Kazakh speech corpus,” in <i>Proc. Interspeech</i>, 2022, pp. 1367–1371, doi: 10.21437/Interspeech.2022-421.</p>
+<p>[8] OECD, <i>Frascati Manual 2015: Guidelines for Collecting and Reporting Data on Research and Experimental Development</i>. Paris: OECD Publishing, 2015, doi: 10.1787/9789264239012-en.</p>
+<p>[9] A. Radford <i>et al.</i>, “Robust speech recognition via large-scale weak supervision,” in <i>Proc. ICML</i>, PMLR 202, 2023.</p>
+<p>[10] S. Sitaram, K. R. Chandu, S. K. Rallabandi, and A. W. Black, “A survey of code-switched speech and language processing,” arXiv:1904.00784, 2019.</p>
+<p>[11] InflexionLab, “sybyrla: Whisper Large V3 fine-tuned for Kazakh (model card),” HuggingFace, 2025.</p>
+<p>[12] M. D. Wilkinson <i>et al.</i>, “The FAIR guiding principles for scientific data management and stewardship,” <i>Sci. Data</i>, vol. 3, Art. 160018, 2016.</p>
+<p>[13] Soniox, “Speech-to-text API documentation (async transcription, model stt-async-v3),” soniox.com/docs, accessed Nov. 2026.</p>
+</div>
+
+<h2>Appendix A: Demo Output and Reproducibility</h2>
+<p>Run <code>python3 csaudit.py</code> (20 seeds, about 5 s, writes <code>results.json</code> and Fig. 1), <code>python3 soniox_eval.py</code> (real check, reads stored Soniox output, writes <code>real_results.json</code>) and <code>python3 demo.py</code> (excerpt below; <code>--live &lt;file&gt;</code> calls the API). Code: CODE_LINK_HERE.</p>
+<div class="mono">=== 1. Constructed examples (errors of known type) ===
+REFERENCE : Мен ертең собеседованиеге барамын
+ASR OUTPUT: Мен ертең sobesedovaniege бардым
+code-switched (detector): True
+WER = 2/4 = 0.50
+  E4: ref='собеседованиеге' -> hyp='sobesedovaniege'  (wrong language/script)
+  E1: ref='барамын' -> hyp='бардым'  (substitution)
+
+REFERENCE : Біз бұл мәселені бірге шештік
+ASR OUTPUT: Біз бұл мәселені бірге шештік шештік шештік шештік
+  E6 x3: repeated/invented 'шештік'  (hallucination)
+
+=== 2. Real ASR output (Soniox stt-async-v3, own recordings) ===
+REFERENCE : ертең сабақ сағат тоғызда басталады
+ASR OUTPUT: ертең сабақ сағат 9-да басталады
+  E5: ref='тоғызда' -> hyp='9-да'  (loanword/number)
+
+REFERENCE : мына вариант маған нормально сияқты
+ASR OUTPUT: мына вариант маған нормальный сияқты
+code-switched (detector): True
+  E1: ref='нормально' -> hyp='нормальный'  (substitution)</div>
+</body></html>

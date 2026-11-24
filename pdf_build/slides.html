@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>CS-Audit slides</title>
+<style>
+@page { size: 297mm 167mm; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Helvetica Neue", Arial, sans-serif; color: #1a1f24; }
+.s { width: 297mm; height: 167mm; padding: 14mm 18mm 12mm; page-break-after: always; position: relative; overflow: hidden; }
+.s:last-child { page-break-after: auto; }
+h1 { font-size: 26pt; margin: 0 0 6mm; color: #1f4e79; }
+h2 { font-size: 21pt; margin: 0 0 6mm; color: #1f4e79; border-bottom: 2px solid #1f4e79; padding-bottom: 2mm; }
+p, li { font-size: 14.5pt; line-height: 1.38; }
+ul { margin: 0; padding-left: 7mm; } li { margin-bottom: 2.2mm; }
+.foot { position: absolute; bottom: 6mm; left: 18mm; right: 18mm; font-size: 9pt; color: #6b7682; display: flex; justify-content: space-between; }
+.title { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+.title h1 { font-size: 46pt; margin-bottom: 4mm; }
+.title .t2 { font-size: 18pt; line-height: 1.35; max-width: 220mm; }
+.title .t3 { font-size: 13pt; color: #4a5560; margin-top: 10mm; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.box { border: 1px solid #c9d1d9; border-radius: 2mm; padding: 4mm 5mm; }
+.box b { color: #1f4e79; }
+.box p { margin: 1.5mm 0 0; font-size: 13.5pt; }
+.flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin-bottom: 5mm; }
+.flow .box { font-size: 12.5pt; }
+.mono { font-family: Menlo, Consolas, monospace; font-size: 11.5pt; background: #f4f5f7; border: 1px solid #dde2e7; padding: 3.5mm 5mm; line-height: 1.5; white-space: pre; }
+table { border-collapse: collapse; width: 100%; font-size: 13pt; }
+td, th { padding: 2.2mm 3mm; border-bottom: 1px solid #c9d1d9; text-align: left; }
+th { color: #1f4e79; }
+.ok { color: #1e7b3a; font-weight: bold; }
+.small { font-size: 11.5pt; color: #4a5560; }
+</style></head><body>
+
+<div class="s"><div class="title">
+<h1>CS-Audit</h1>
+<div class="t2">An open toolkit and benchmark for error-level evaluation of speech recognition on Kazakh and Kazakh–Russian code-switched speech</div>
+<div class="t3">Mini-R&amp;D project proposal · CSS 410 Research Tools and Methods<br>Madi Baizhuman · 230103047 · SDU University</div>
+</div></div>
+
+<div class="s"><h2>Problem and gap</h2>
+<ul>
+<li>Voice products need to understand real Kazakh: spontaneous, with Russian words mixed in</li>
+<li>Whisper-large: 43.6% word error rate on read Kazakh (FLEURS)</li>
+<li>Open data exist (KSC 332 h, KSC2 &gt; 1,000 h with code-switching)</li>
+<li>But accuracy is reported as <b>one number</b> on read or broadcast speech</li>
+<li><b>Gap:</b> no error-level comparison of read, spontaneous and code-switched speech; no open tool to do it</li>
+<li>R&amp;D type: applied research + experimental development · <b>TRL 3 now → TRL 5 target</b></li>
+</ul>
+<div class="foot"><span>CS-Audit · Madi Baizhuman</span><span>2</span></div></div>
+
+<div class="s"><h2>Aim and SMART objectives</h2>
+<div class="grid2">
+<div class="box"><b>O1 · month 8</b><p>Test sets ≥ 2 h per speech type + detector F1 ≥ 0.85 on 600 verified real utterances</p></div>
+<div class="box"><b>O2 · month 12</b><p>Whisper small / medium / large-v3, a Kazakh model and a commercial API: WER, CER with 95% CI and error classes (κ ≥ 0.70)</p></div>
+<div class="box"><b>O3 · month 17</b><p>Fine-tuning with 10, 50, 100 h (3 seeds, 18 runs): is the gain 50→100 h &lt; half of 0→50 h?</p></div>
+<div class="box"><b>O4 · month 18</b><p>Open benchmark, toolkit and guide; one paper; workshop with 2 local companies</p></div>
+</div>
+<div class="foot"><span>CS-Audit · Madi Baizhuman</span><span>3</span></div></div>
+
+<div class="s"><h2>Prototype: the CS-Audit pipeline (demo)</h2>
+<div class="flow">
+<div class="box"><b>1 Input</b><p>Simulated errors of known type, or real ASR output (Soniox)</p></div>
+<div class="box"><b>2 Detector</b><p>Char n-gram NB: Kazakh vs Russian word</p></div>
+<div class="box"><b>3 Aligner</b><p>Reference vs output, word level</p></div>
+<div class="box"><b>4 Classifier</b><p>E1–E6 error codes</p></div>
+</div>
+<div class="mono">REFERENCE : Мен ертең собеседованиеге барамын
+ASR OUTPUT: Мен ертең sobesedovaniege бардым     → code-switched · WER 2/4
+  E4 wrong script:  собеседованиеге → sobesedovaniege
+  E1 substitution:  барамын → бардым
+Repeated «шештік» ×3 → E6 hallucination
+REAL (Soniox):  тоғызда → 9-да  E5 number ·  нормально → нормальный  E1</div>
+<div class="foot"><span>CS-Audit · Madi Baizhuman</span><span>4</span></div></div>
+
+<div class="s"><h2>Results: success criteria met</h2>
+<table>
+<tr><th>Simulated errors · 20 seeds × 600 utterances</th><th>CS-Audit</th><th>Baseline</th><th>Target</th></tr>
+<tr><td>Code-switch detector F1</td><td><b>0.89</b></td><td>0.72 (letter rule)</td><td>≥ 0.85 <span class="ok">✓</span></td></tr>
+<tr><td>Error classifier macro-F1</td><td><b>0.84</b></td><td>0.36 (S/D/I)</td><td>≥ 0.80, +0.15 <span class="ok">✓</span></td></tr>
+</table>
+<table style="margin-top:5mm">
+<tr><th>Real check · Soniox stt-async-v3 · 20 own recorded phrases</th><th>WER</th><th>Errors (CS-Audit)</th></tr>
+<tr><td>Kazakh (10)</td><td>4.5%</td><td>2 × E5 (numbers as digits)</td></tr>
+<tr><td>Code-switched (10)</td><td>6.7%</td><td>3 × E1 (suffix on Russian stems)</td></tr>
+</table>
+<p class="small" style="margin-top:4mm">Limits: main test uses simulated output; few simple sentences; E4 and E6 recall ≈ 0.67; real check is 1 speaker, 5 errors (illustrative). → TRL 3 reached; next: Whisper and real corpora (TRL 4–5)</p>
+<div class="foot"><span>CS-Audit · Madi Baizhuman</span><span>5</span></div></div>
+
+<div class="s"><h2>Plan, budget, risks and impact</h2>
+<div class="grid2">
+<div class="box"><b>Budget: USD 60,000 / 18 months</b><p>Personnel 42k · computing 3k · travel 2.5k · subcontracting 2k · consumables 0.5k · overheads 10k</p></div>
+<div class="box"><b>Top risks</b><p>Real errors harder than simulated · few code-switched data · licences · GPU time</p></div>
+<div class="box"><b>Work packages</b><p>WP1 management · WP2 test sets + tool · WP3 zero-shot evaluation · WP4 fine-tuning · WP5 dissemination</p></div>
+<div class="box"><b>Impact</b><p>Cheaper decisions for voice products; state language in digital services. Open code (Apache-2.0), CC BY annotations, FAIR data</p></div>
+</div>
+<p style="text-align:center; margin-top:8mm; font-size:18pt; color:#1f4e79"><b>Thank you · questions?</b></p>
+<div class="foot"><span>CS-Audit · Madi Baizhuman</span><span>6</span></div></div>
+
+</body></html>

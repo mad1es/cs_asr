@@ -1,0 +1,1585 @@
+{
+ "model": "stt-async-v3",
+ "tokens": [
+  {
+   "text": "М",
+   "start_ms": 1830,
+   "end_ms": 1890,
+   "confidence": 0.9463500380516052,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ен",
+   "start_ms": 1950,
+   "end_ms": 2010,
+   "confidence": 0.9998416304588318,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ",
+   "start_ms": 2070,
+   "end_ms": 2130,
+   "confidence": 0.9900421500205994,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ер",
+   "start_ms": 2190,
+   "end_ms": 2250,
+   "confidence": 0.9967665672302246,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "те",
+   "start_ms": 2250,
+   "end_ms": 2310,
+   "confidence": 0.9986295700073242,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ң",
+   "start_ms": 2370,
+   "end_ms": 2430,
+   "confidence": 0.9999485015869141,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " со",
+   "start_ms": 2430,
+   "end_ms": 2490,
+   "confidence": 0.9935515522956848,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "бе",
+   "start_ms": 2550,
+   "end_ms": 2610,
+   "confidence": 0.9953341484069824,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "се",
+   "start_ms": 2610,
+   "end_ms": 2670,
+   "confidence": 0.9998073577880859,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "дова",
+   "start_ms": 2730,
+   "end_ms": 2790,
+   "confidence": 0.9946698546409607,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ние",
+   "start_ms": 2910,
+   "end_ms": 2970,
+   "confidence": 0.9941350221633911,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ға",
+   "start_ms": 3150,
+   "end_ms": 3210,
+   "confidence": 0.9910433888435364,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ба",
+   "start_ms": 3330,
+   "end_ms": 3390,
+   "confidence": 0.9999465942382812,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "рам",
+   "start_ms": 3510,
+   "end_ms": 3570,
+   "confidence": 0.9997825622558594,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ын",
+   "start_ms": 3690,
+   "end_ms": 3750,
+   "confidence": 0.9999275207519531,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ",",
+   "start_ms": 3810,
+   "end_ms": 3870,
+   "confidence": 0.530450165271759,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ке",
+   "start_ms": 4050,
+   "end_ms": 4110,
+   "confidence": 0.9996148347854614,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ше",
+   "start_ms": 4230,
+   "end_ms": 4290,
+   "confidence": 0.973069429397583,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " нача",
+   "start_ms": 4530,
+   "end_ms": 4590,
+   "confidence": 0.9978261590003967,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ль",
+   "start_ms": 4650,
+   "end_ms": 4710,
+   "confidence": 0.9998931884765625,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ник",
+   "start_ms": 4710,
+   "end_ms": 4770,
+   "confidence": 0.9999198913574219,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ма",
+   "start_ms": 4950,
+   "end_ms": 5010,
+   "confidence": 0.9990525841712952,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ған",
+   "start_ms": 5070,
+   "end_ms": 5130,
+   "confidence": 0.9999332427978516,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " з",
+   "start_ms": 5190,
+   "end_ms": 5250,
+   "confidence": 0.9989896416664124,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "во",
+   "start_ms": 5310,
+   "end_ms": 5370,
+   "confidence": 0.9999275207519531,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "но",
+   "start_ms": 5430,
+   "end_ms": 5490,
+   "confidence": 0.9981477856636047,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "к",
+   "start_ms": 5490,
+   "end_ms": 5550,
+   "confidence": 0.9996681809425354,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " жа",
+   "start_ms": 5550,
+   "end_ms": 5610,
+   "confidence": 0.9996815323829651,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "са",
+   "start_ms": 5730,
+   "end_ms": 5790,
+   "confidence": 0.9999771118164062,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ды.",
+   "start_ms": 5850,
+   "end_ms": 5910,
+   "confidence": 0.9968502521514893,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " Б",
+   "start_ms": 6810,
+   "end_ms": 6870,
+   "confidence": 0.9852614402770996,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ұл",
+   "start_ms": 6870,
+   "end_ms": 6930,
+   "confidence": 0.9998970031738281,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " за",
+   "start_ms": 7050,
+   "end_ms": 7110,
+   "confidence": 0.9961814880371094,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "да",
+   "start_ms": 7170,
+   "end_ms": 7230,
+   "confidence": 0.9999828338623047,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ча",
+   "start_ms": 7350,
+   "end_ms": 7410,
+   "confidence": 0.9919378757476807,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ны",
+   "start_ms": 7530,
+   "end_ms": 7590,
+   "confidence": 0.9988798499107361,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " с",
+   "start_ms": 7650,
+   "end_ms": 7710,
+   "confidence": 0.995688796043396,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ро",
+   "start_ms": 7710,
+   "end_ms": 7770,
+   "confidence": 0.9997444748878479,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "чно",
+   "start_ms": 7890,
+   "end_ms": 7950,
+   "confidence": 0.9982863068580627,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " бі",
+   "start_ms": 8070,
+   "end_ms": 8130,
+   "confidence": 0.9952980279922485,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ті",
+   "start_ms": 8190,
+   "end_ms": 8250,
+   "confidence": 0.9974512457847595,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ру",
+   "start_ms": 8250,
+   "end_ms": 8310,
+   "confidence": 0.9968483448028564,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " к",
+   "start_ms": 8490,
+   "end_ms": 8550,
+   "confidence": 0.9986543655395508,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ере",
+   "start_ms": 8610,
+   "end_ms": 8670,
+   "confidence": 0.8483507633209229,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "к,",
+   "start_ms": 8730,
+   "end_ms": 8790,
+   "confidence": 0.8921300768852234,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " от",
+   "start_ms": 9210,
+   "end_ms": 9270,
+   "confidence": 0.9796378016471863,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "че",
+   "start_ms": 9450,
+   "end_ms": 9510,
+   "confidence": 0.5309258103370667,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "т",
+   "start_ms": 9570,
+   "end_ms": 9630,
+   "confidence": 0.9554377794265747,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ты",
+   "start_ms": 9690,
+   "end_ms": 9750,
+   "confidence": 0.9995652437210083,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " п",
+   "start_ms": 9810,
+   "end_ms": 9870,
+   "confidence": 0.8745594620704651,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ят",
+   "start_ms": 9870,
+   "end_ms": 9930,
+   "confidence": 0.9832353591918945,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ница",
+   "start_ms": 10110,
+   "end_ms": 10170,
+   "confidence": 0.9812513589859009,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ға",
+   "start_ms": 10230,
+   "end_ms": 10290,
+   "confidence": 0.9998741149902344,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " дей",
+   "start_ms": 10350,
+   "end_ms": 10410,
+   "confidence": 0.9999885559082031,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ін",
+   "start_ms": 10470,
+   "end_ms": 10530,
+   "confidence": 0.9998683929443359,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ж",
+   "start_ms": 10590,
+   "end_ms": 10650,
+   "confidence": 0.9992907643318176,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "і",
+   "start_ms": 10650,
+   "end_ms": 10710,
+   "confidence": 0.9999313354492188,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "бер",
+   "start_ms": 10770,
+   "end_ms": 10830,
+   "confidence": 0.9999008178710938,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ші",
+   "start_ms": 10950,
+   "end_ms": 11010,
+   "confidence": 0.9972705245018005,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ".",
+   "start_ms": 11070,
+   "end_ms": 11130,
+   "confidence": 0.9996072053909302,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " М",
+   "start_ms": 11670,
+   "end_ms": 11730,
+   "confidence": 0.9978169798851013,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ен",
+   "start_ms": 11730,
+   "end_ms": 11790,
+   "confidence": 0.9999465942382812,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "і",
+   "start_ms": 11850,
+   "end_ms": 11910,
+   "confidence": 0.9999123215675354,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ң",
+   "start_ms": 11910,
+   "end_ms": 11970,
+   "confidence": 0.9999847412109375,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " теле",
+   "start_ms": 12030,
+   "end_ms": 12090,
+   "confidence": 0.9985286593437195,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "фо",
+   "start_ms": 12270,
+   "end_ms": 12330,
+   "confidence": 0.9990715384483337,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ным",
+   "start_ms": 12390,
+   "end_ms": 12450,
+   "confidence": 0.999225914478302,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " во",
+   "start_ms": 12630,
+   "end_ms": 12690,
+   "confidence": 0.999855101108551,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "об",
+   "start_ms": 12750,
+   "end_ms": 12810,
+   "confidence": 0.9999027252197266,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ще",
+   "start_ms": 12870,
+   "end_ms": 12930,
+   "confidence": 0.9999618530273438,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " за",
+   "start_ms": 13050,
+   "end_ms": 13110,
+   "confidence": 0.997126579284668,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ряд",
+   "start_ms": 13170,
+   "end_ms": 13230,
+   "confidence": 0.9974246025085449,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "тал",
+   "start_ms": 13350,
+   "end_ms": 13410,
+   "confidence": 0.8921912908554077,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ма",
+   "start_ms": 13470,
+   "end_ms": 13530,
+   "confidence": 0.9998761415481567,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "й",
+   "start_ms": 13530,
+   "end_ms": 13590,
+   "confidence": 0.9999351501464844,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " жа",
+   "start_ms": 13650,
+   "end_ms": 13710,
+   "confidence": 0.9979616403579712,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ты",
+   "start_ms": 13770,
+   "end_ms": 13830,
+   "confidence": 0.9999905824661255,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "р.",
+   "start_ms": 13890,
+   "end_ms": 13950,
+   "confidence": 0.9664884209632874,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " О",
+   "start_ms": 14310,
+   "end_ms": 14370,
+   "confidence": 0.996097981929779,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ның",
+   "start_ms": 14430,
+   "end_ms": 14490,
+   "confidence": 0.99934983253479,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ха",
+   "start_ms": 14670,
+   "end_ms": 14730,
+   "confidence": 0.9975064992904663,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ракт",
+   "start_ms": 14790,
+   "end_ms": 14850,
+   "confidence": 0.9819591045379639,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ер",
+   "start_ms": 15090,
+   "end_ms": 15150,
+   "confidence": 0.6718088984489441,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ы",
+   "start_ms": 15150,
+   "end_ms": 15150,
+   "confidence": 0.9954423308372498,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ө",
+   "start_ms": 15270,
+   "end_ms": 15330,
+   "confidence": 0.9977462291717529,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "те",
+   "start_ms": 15450,
+   "end_ms": 15510,
+   "confidence": 0.9991592168807983,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " сло",
+   "start_ms": 15630,
+   "end_ms": 15690,
+   "confidence": 0.9972686171531677,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ж",
+   "start_ms": 15810,
+   "end_ms": 15870,
+   "confidence": 0.9999198913574219,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ный",
+   "start_ms": 15930,
+   "end_ms": 15990,
+   "confidence": 0.9996739029884338,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ".",
+   "start_ms": 16050,
+   "end_ms": 16110,
+   "confidence": 0.7486027479171753,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " Са",
+   "start_ms": 16530,
+   "end_ms": 16590,
+   "confidence": 0.9979196190834045,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ба",
+   "start_ms": 16650,
+   "end_ms": 16710,
+   "confidence": 0.9999771118164062,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "қ",
+   "start_ms": 16770,
+   "end_ms": 16830,
+   "confidence": 0.9998149871826172,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "тан",
+   "start_ms": 16890,
+   "end_ms": 16950,
+   "confidence": 0.9999027252197266,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ке",
+   "start_ms": 17070,
+   "end_ms": 17130,
+   "confidence": 0.9999809265136719,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "й",
+   "start_ms": 17130,
+   "end_ms": 17190,
+   "confidence": 0.9999771118164062,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ін",
+   "start_ms": 17190,
+   "end_ms": 17250,
+   "confidence": 0.9999027252197266,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " в",
+   "start_ms": 17370,
+   "end_ms": 17430,
+   "confidence": 0.9974190592765808,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "стре",
+   "start_ms": 17490,
+   "end_ms": 17550,
+   "confidence": 0.9999408721923828,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ча",
+   "start_ms": 17610,
+   "end_ms": 17670,
+   "confidence": 0.9965118169784546,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ға",
+   "start_ms": 17790,
+   "end_ms": 17850,
+   "confidence": 0.9998970031738281,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ба",
+   "start_ms": 17910,
+   "end_ms": 17970,
+   "confidence": 0.9998876452445984,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ра",
+   "start_ms": 18030,
+   "end_ms": 18090,
+   "confidence": 0.9970955848693848,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "мы",
+   "start_ms": 18150,
+   "end_ms": 18210,
+   "confidence": 0.9999523758888245,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "з",
+   "start_ms": 18210,
+   "end_ms": 18270,
+   "confidence": 0.9999523162841797,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ",",
+   "start_ms": 18390,
+   "end_ms": 18450,
+   "confidence": 0.9515334963798523,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " до",
+   "start_ms": 19050,
+   "end_ms": 19110,
+   "confidence": 0.9957789778709412,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "го",
+   "start_ms": 19230,
+   "end_ms": 19290,
+   "confidence": 0.9997978806495667,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "вор",
+   "start_ms": 19410,
+   "end_ms": 19470,
+   "confidence": 0.9995176196098328,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ды",
+   "start_ms": 19590,
+   "end_ms": 19650,
+   "confidence": 0.9616557955741882,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ә",
+   "start_ms": 19770,
+   "end_ms": 19830,
+   "confidence": 0.9999010562896729,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "лі",
+   "start_ms": 19950,
+   "end_ms": 20010,
+   "confidence": 0.9999755024909973,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " под",
+   "start_ms": 20070,
+   "end_ms": 20130,
+   "confidence": 0.9988962411880493,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "писа",
+   "start_ms": 20190,
+   "end_ms": 20250,
+   "confidence": 0.9991611242294312,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ть",
+   "start_ms": 20310,
+   "end_ms": 20370,
+   "confidence": 0.9952183365821838,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " е",
+   "start_ms": 20430,
+   "end_ms": 20490,
+   "confidence": 0.9916156530380249,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "т",
+   "start_ms": 20490,
+   "end_ms": 20550,
+   "confidence": 0.99794602394104,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "кен",
+   "start_ms": 20550,
+   "end_ms": 20610,
+   "confidence": 0.9989172220230103,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " жо",
+   "start_ms": 20730,
+   "end_ms": 20790,
+   "confidence": 0.9999771118164062,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "қ",
+   "start_ms": 20850,
+   "end_ms": 20910,
+   "confidence": 0.9999351501464844,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "пы",
+   "start_ms": 20970,
+   "end_ms": 21030,
+   "confidence": 0.9996700882911682,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "з",
+   "start_ms": 21090,
+   "end_ms": 21150,
+   "confidence": 0.9999866485595703,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ".",
+   "start_ms": 21150,
+   "end_ms": 21210,
+   "confidence": 0.9740052819252014,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " Ко",
+   "start_ms": 21450,
+   "end_ms": 21510,
+   "confidence": 0.9902973175048828,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ро",
+   "start_ms": 21570,
+   "end_ms": 21630,
+   "confidence": 0.9967817664146423,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "че",
+   "start_ms": 21690,
+   "end_ms": 21750,
+   "confidence": 0.9999485015869141,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ",",
+   "start_ms": 21930,
+   "end_ms": 21990,
+   "confidence": 0.9995671510696411,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " бі",
+   "start_ms": 22290,
+   "end_ms": 22350,
+   "confidence": 0.9980641007423401,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "з",
+   "start_ms": 22350,
+   "end_ms": 22410,
+   "confidence": 0.9999923706054688,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ",
+   "start_ms": 22590,
+   "end_ms": 22650,
+   "confidence": 0.9997921586036682,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ер",
+   "start_ms": 22710,
+   "end_ms": 22770,
+   "confidence": 0.9992468953132629,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "те",
+   "start_ms": 22830,
+   "end_ms": 22890,
+   "confidence": 0.996365487575531,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ң",
+   "start_ms": 22890,
+   "end_ms": 22950,
+   "confidence": 0.999754011631012,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ке",
+   "start_ms": 23010,
+   "end_ms": 23070,
+   "confidence": 0.9991441369056702,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "з",
+   "start_ms": 23130,
+   "end_ms": 23190,
+   "confidence": 0.9998321533203125,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "де",
+   "start_ms": 23190,
+   "end_ms": 23250,
+   "confidence": 0.9999828338623047,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "се",
+   "start_ms": 23310,
+   "end_ms": 23370,
+   "confidence": 0.9996910691261292,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "мі",
+   "start_ms": 23490,
+   "end_ms": 23550,
+   "confidence": 0.9999313950538635,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "з",
+   "start_ms": 23550,
+   "end_ms": 23610,
+   "confidence": 0.9999923706054688,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ".",
+   "start_ms": 23670,
+   "end_ms": 23730,
+   "confidence": 0.9992126226425171,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " М",
+   "start_ms": 24270,
+   "end_ms": 24330,
+   "confidence": 0.9995728731155396,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ы",
+   "start_ms": 24330,
+   "end_ms": 24390,
+   "confidence": 0.9993841052055359,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "на",
+   "start_ms": 24390,
+   "end_ms": 24450,
+   "confidence": 0.9996853470802307,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ва",
+   "start_ms": 24570,
+   "end_ms": 24630,
+   "confidence": 0.9905482530593872,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ри",
+   "start_ms": 24690,
+   "end_ms": 24750,
+   "confidence": 0.9999580383300781,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ан",
+   "start_ms": 24750,
+   "end_ms": 24810,
+   "confidence": 0.9998207092285156,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "т",
+   "start_ms": 24870,
+   "end_ms": 24930,
+   "confidence": 0.9999122619628906,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " ма",
+   "start_ms": 24990,
+   "end_ms": 25050,
+   "confidence": 0.999723494052887,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ған",
+   "start_ms": 25110,
+   "end_ms": 25170,
+   "confidence": 0.9999027252197266,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " но",
+   "start_ms": 25290,
+   "end_ms": 25350,
+   "confidence": 0.9976186752319336,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "рма",
+   "start_ms": 25410,
+   "end_ms": 25470,
+   "confidence": 0.9999618530273438,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ль",
+   "start_ms": 25530,
+   "end_ms": 25590,
+   "confidence": 0.952332079410553,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ный",
+   "start_ms": 25650,
+   "end_ms": 25710,
+   "confidence": 0.9965289235115051,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": " си",
+   "start_ms": 25770,
+   "end_ms": 25830,
+   "confidence": 0.9996150135993958,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "я",
+   "start_ms": 25830,
+   "end_ms": 25890,
+   "confidence": 0.9998054504394531,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "қ",
+   "start_ms": 25950,
+   "end_ms": 26010,
+   "confidence": 0.9999504089355469,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": "ты",
+   "start_ms": 26070,
+   "end_ms": 26130,
+   "confidence": 0.9998188614845276,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  },
+  {
+   "text": ".",
+   "start_ms": 26190,
+   "end_ms": 26250,
+   "confidence": 0.9990965723991394,
+   "speaker": null,
+   "language": "kk",
+   "is_audio_event": null,
+   "translation_status": null
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "summary": {
+  "wer_kz": [
+   2,
+   44,
+   0.045454545454545456
+  ],
+  "wer_cs": [
+   3,
+   45,
+   0.06666666666666667
+  ],
+  "class_counts": {
+   "E1": 3,
+   "E2": 0,
+   "E3": 0,
+   "E4": 0,
+   "E5": 2,
+   "E6": 0
+  },
+  "detector_nb": {
+   "P": 1.0,
+   "R": 1.0,
+   "F1": 1.0
+  },
+  "detector_rule": {
+   "P": 1.0,
+   "R": 0.8,
+   "F1": 0.888888888888889
+  }
+ },
+ "utterances": [
+  {
+   "id": "01",
+   "type": "kz",
+   "ref": "бүгін ауа райы өте жақсы",
+   "hyp": "бүгін ауа райы өте жақсы",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "02",
+   "type": "kz",
+   "ref": "мен кітапханаға барамын",
+   "hyp": "мен кітапханаға барамын",
+   "errors": 0,
+   "n": 3,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "03",
+   "type": "kz",
+   "ref": "біз бұл мәселені бірге шештік",
+   "hyp": "біз бұл мәселені бірге шештік",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "04",
+   "type": "kz",
+   "ref": "ертең сабақ сағат тоғызда басталады",
+   "hyp": "ертең сабақ сағат 9-да басталады",
+   "errors": 1,
+   "n": 5,
+   "classes": [
+    [
+     "E5",
+     "тоғызда",
+     "9-да"
+    ]
+   ],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "05",
+   "type": "kz",
+   "ref": "анам дүкеннен нан сатып алды",
+   "hyp": "анам дүкеннен нан сатып алды",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "06",
+   "type": "kz",
+   "ref": "сен үй тапсырмасын орындадың ба",
+   "hyp": "сен үй тапсырмасын орындадың ба",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "07",
+   "type": "kz",
+   "ref": "қаладағы жолдар жөнделіп жатыр",
+   "hyp": "қаладағы жолдар жөнделіп жатыр",
+   "errors": 0,
+   "n": 4,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "08",
+   "type": "kz",
+   "ref": "інім кешке кітап оқиды",
+   "hyp": "інім кешке кітап оқиды",
+   "errors": 0,
+   "n": 4,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "09",
+   "type": "kz",
+   "ref": "біздің мектеп қаланың орталығында",
+   "hyp": "біздің мектеп қаланың орталығында",
+   "errors": 0,
+   "n": 4,
+   "classes": [],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "10",
+   "type": "kz",
+   "ref": "жиналыс екі сағатқа созылды",
+   "hyp": "жиналыс 2 сағатқа созылды",
+   "errors": 1,
+   "n": 4,
+   "classes": [
+    [
+     "E5",
+     "екі",
+     "2"
+    ]
+   ],
+   "cs_gold": false,
+   "cs_pred_nb": false,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "11",
+   "type": "cs",
+   "ref": "мен ертең собеседованиеге барамын",
+   "hyp": "мен ертең собеседованиеға барамын",
+   "errors": 1,
+   "n": 4,
+   "classes": [
+    [
+     "E1",
+     "собеседованиеге",
+     "собеседованиеға"
+    ]
+   ],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "12",
+   "type": "cs",
+   "ref": "кеше начальник маған звонок жасады",
+   "hyp": "кеше начальник маған звонок жасады",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "13",
+   "type": "cs",
+   "ref": "бұл задачаны срочно бітіру керек",
+   "hyp": "бұл задачаны срочно бітіру керек",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "14",
+   "type": "cs",
+   "ref": "отчетты пятницаға дейін жіберші",
+   "hyp": "отчетты пятницаға дейін жіберші",
+   "errors": 0,
+   "n": 4,
+   "classes": [],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "15",
+   "type": "cs",
+   "ref": "менің телефоным вообще зарядталмай жатыр",
+   "hyp": "менің телефоным вообще зарядталмай жатыр",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "16",
+   "type": "cs",
+   "ref": "оның характері өте сложный",
+   "hyp": "оның характеры өте сложный",
+   "errors": 1,
+   "n": 4,
+   "classes": [
+    [
+     "E1",
+     "характері",
+     "характеры"
+    ]
+   ],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "17",
+   "type": "cs",
+   "ref": "сабақтан кейін встречаға барамыз",
+   "hyp": "сабақтан кейін встречаға барамыз",
+   "errors": 0,
+   "n": 4,
+   "classes": [],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": false,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "18",
+   "type": "cs",
+   "ref": "договорды әлі подписать еткен жоқпыз",
+   "hyp": "договорды әлі подписать еткен жоқпыз",
+   "errors": 0,
+   "n": 5,
+   "classes": [],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "19",
+   "type": "cs",
+   "ref": "короче біз ертең кездесеміз",
+   "hyp": "короче біз ертең кездесеміз",
+   "errors": 0,
+   "n": 4,
+   "classes": [],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  },
+  {
+   "id": "20",
+   "type": "cs",
+   "ref": "мына вариант маған нормально сияқты",
+   "hyp": "мына вариант маған нормальный сияқты",
+   "errors": 1,
+   "n": 5,
+   "classes": [
+    [
+     "E1",
+     "нормально",
+     "нормальный"
+    ]
+   ],
+   "cs_gold": true,
+   "cs_pred_nb": true,
+   "cs_pred_rule": true,
+   "model": "stt-async-v3"
+  }
+ ]
+}

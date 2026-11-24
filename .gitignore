@@ -1,0 +1,4 @@
+raw/
+.env
+__pycache__/
+pdf_build/*.pdf
